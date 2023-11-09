@@ -6,8 +6,8 @@ export default () => (
 		<div className={[feature.minor, feature.right].join(" ")}>
 			<h2>Community Carols 2023</h2>
 			<p>
-				2000 years ago "the Word became flesh and dwelt among us" (John
-				1:14), and, quite literally, everything changed.
+				The Bible says 2000 years ago, God "became flesh and dwelt among us" (John
+				1:14). In that one Christmas moment, everything changed.
 			</p>
 			<p>
 				At this year's carol service, we invite you to come join others
