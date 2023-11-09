@@ -1,0 +1,70 @@
+@import "./variables.scss";
+
+.minor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $gutter;
+
+    h2, p { margin: 0}
+}
+
+.major {
+    &.image, &.iframe {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 60%;
+
+        overflow: hidden;
+        border-radius: 5px ;
+    }
+
+    &.iframe {
+        position: relative;
+
+        iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .minor, .major {
+        grid-column: 1 / -1;
+    }
+}
+
+@media screen and (min-width: $sm) and (max-width: $md) {
+    .minor {
+        grid-column: 2 / -2;
+    }
+    .major {
+        grid-column: 1 / -1;
+    }
+}
+
+@media screen and (min-width: $md) {
+    .minor, .major {
+        grid-row: 1;
+    }
+
+    .minor {
+        &.left {
+            grid-column: 2 / 6;
+        }
+        &.right {
+            grid-column: 8 / -2;
+        }
+    }
+    .major {
+        &.left {
+            grid-column: 1 / 7;
+        }
+        &.right {
+            grid-column: 7 / -1;
+        }
+    }
+}

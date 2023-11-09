@@ -1,0 +1,26 @@
+@import "../variables";
+.outer {
+    background-color: white;
+    padding: $gutter;
+}
+.inner {
+    width: calc(100% - ($gutter * 2));
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.items { 
+    display: flex;
+    column-gap: $gutter;
+    align-items: center;
+
+    a { 
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+

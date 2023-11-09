@@ -1,0 +1,23 @@
+@import "../variables.scss";
+
+.wrapper {
+    display: flex;
+    padding: calc($gutter * 2);
+    flex-direction: column;
+    row-gap: $gutter;
+    text-align: center;
+    align-items: center;
+
+    h1, p {
+        margin: 0;
+    }
+
+    img {
+        margin-bottom: $gutter;
+        display: block;
+    }
+
+    @media screen and (min-width: $md) {
+        margin: calc($gutter * 4);
+    }
+}

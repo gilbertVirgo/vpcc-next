@@ -1,0 +1,13 @@
+@import "../variables.scss";
+
+.wrapper {
+    margin-bottom: calc($gutter * 5);
+
+    @media screen and (min-width: $md) {
+        margin-bottom: calc($gutter * 10);
+    }
+
+    @media screen and (min-width: $lg) {
+        margin-bottom: calc($gutter * 15);
+    }
+}

@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: $gutter;
+    width: calc(100% - ($gutter * 2));
+
+    max-width: $xl;
+    margin: 0 auto;
+
+    @media screen and (min-width: $md) {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
