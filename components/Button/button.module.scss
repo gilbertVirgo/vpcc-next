@@ -1,14 +1,22 @@
 @import "../variables.scss";
 
 .wrapper {
-    border: 3px solid $gold;
+    color: $dark;
     appearance: none;
-    background-color: transparent;
+    border: none;
+    background-color: #{$dark}20;
     cursor: pointer;
-    padding: 5px 8px;
+    padding: 10px 15px;
     border-radius:5px;
     width: fit-content;
     font-size: 16px;
     font-family: "Nunito", sans-serif;
     font-weight: bold;
+
+    transform: scale(1);
+    transition: transform 0.23s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 }

@@ -1,3 +1,4 @@
+import Button from "../Button";
 import Grid from "../Grid";
 import feature from "../feature.module.scss";
 
@@ -6,8 +7,9 @@ export default () => (
 		<div className={[feature.minor, feature.right].join(" ")}>
 			<h2>Community Carols 2023</h2>
 			<p>
-				The Bible says 2000 years ago, God "became flesh and dwelt among us" (John
-				1:14). In that one Christmas moment, everything changed.
+				The Bible says 2000 years ago, God "became flesh and dwelt among
+				us" (John 1:14). In that one Christmas moment, everything
+				changed.
 			</p>
 			<p>
 				At this year's carol service, we invite you to come join others
@@ -17,11 +19,14 @@ export default () => (
 			<p>
 				If you'd like to help out with either <em>the Choir</em>,{" "}
 				<em>Baking</em> or <em>Arts &amp; Crafts</em>, please{" "}
-				<a href="mailto:ben@vpcc.church?subject=I%20would%20like%20to%20help%out!">
+				<a href="mailto:ben@vpcc.church?subject=I%20would%20like%20to%20help%20out!">
 					get in touch
 				</a>{" "}
 				as soon as possible!
 			</p>
+			<a href="mailto:ben@vpcc.church?subject=I%20would%20like%20to%20help%20out!">
+				<Button>Get in touch →</Button>
+			</a>
 		</div>
 		<div
 			className={[feature.major, feature.left, feature.image].join(" ")}

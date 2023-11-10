@@ -1,7 +1,6 @@
 import CarolServiceInfo from "@/components/CarolServiceInfo";
 import ContactInfo from "@/components/ContactInfo";
 import DoctrinalBasisInfo from "@/components/DoctrinalBasisInfo";
-import Grid from "@/components/Grid";
 import Head from "next/head";
 import MeetingPlaceInfo from "@/components/MeetingPlaceInfo";
 import Nav from "../components/Nav";
@@ -38,10 +37,10 @@ export default function Home() {
 			{[
 				Nav,
 				WebsiteUnderConstruction,
-				MeetingPlaceInfo,
 				CarolServiceInfo,
-				DoctrinalBasisInfo,
+				MeetingPlaceInfo,
 				ContactInfo,
+				DoctrinalBasisInfo,
 			].map((Element) => (
 				<Section>{<Element />}</Section>
 			))}
