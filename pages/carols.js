@@ -1,7 +1,7 @@
 import CarolServiceBanner from "@/components/CarolServiceBanner";
 import CarolServiceInfo from "@/components/CarolServiceInfo";
 import Head from "next/head";
-import NextSeo from "next-seo";
+import { NextSeo } from "next-seo";
 import Section from "@/components/Section";
 
 export default () => {
