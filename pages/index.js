@@ -15,10 +15,10 @@ export default function Home() {
 			{/* Sections */}
 			{[
 				WebsiteUnderConstructionBanner,
-				CarolServiceInfo,
 				MeetingPlaceInfo,
-				ContactInfo,
+				CarolServiceInfo,
 				DoctrinalBasisInfo,
+				ContactInfo,
 			].map((Element) => (
 				<Section>{<Element />}</Section>
 			))}
