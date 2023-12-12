@@ -1,7 +1,5 @@
 import "../global.scss";
-
-import Nav from "@/components/Nav";
-import Section from "@/components/Section";
+import "../public/fonts/fonts.css";
 
 export default function App({ Component, pageProps }) {
 	return <Component {...pageProps}></Component>;

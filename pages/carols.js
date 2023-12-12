@@ -1,5 +1,6 @@
 import CarolServiceBanner from "@/components/CarolServiceBanner";
 import CarolServiceInfo from "@/components/CarolServiceInfo";
+import CarolServiceLocation from "@/components/CarolServiceLocation";
 import Head from "next/head";
 import { NextSeo } from "next-seo";
 import Section from "@/components/Section";
@@ -31,12 +32,11 @@ export default () => {
 			<Head>
 				<title>Carols | Victoria Park Community Church</title>
 			</Head>
-			<Section>
-				<CarolServiceBanner />
-			</Section>
-			<Section>
-				<CarolServiceInfo />
-			</Section>
+			{[CarolServiceBanner, CarolServiceLocation, CarolServiceInfo].map(
+				(Element) => (
+					<Section>{<Element />}</Section>
+				)
+			)}
 		</>
 	);
 };

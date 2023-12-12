@@ -1,12 +1,16 @@
-import Grid from "../Grid";
 import Image from "next/image";
 import Link from "next/link";
-import items from "./items";
 import styles from "./styles.module.scss";
 
 export default () => (
-	<nav className={styles.outer}>
-		<div className={styles.inner}>
+	<nav>
+		<div
+			style={{
+				marginTop: "15px",
+				display: "flex",
+				justifyContent: "center",
+			}}
+		>
 			<Link href="/">
 				<Image
 					className={styles.logo}
@@ -16,11 +20,6 @@ export default () => (
 					height={50}
 				/>
 			</Link>
-			{/* <div className={styles.items}>
-				{items.map(({ title, link }) => (
-					<Link href={link}>{title}</Link>
-				))}
-			</div> */}
 		</div>
 	</nav>
 );

@@ -16,17 +16,6 @@ export default () => (
 				from the local community to sing Christmas carols, eat mince
 				pies, and hear what it's all about!
 			</p>
-			<p>
-				If you'd like to help out with either <em>the Choir</em>,{" "}
-				<em>Baking</em> or <em>Arts &amp; Crafts</em>, please{" "}
-				<a href="mailto:ben@vpcc.church?subject=I%20would%20like%20to%20help%20out!">
-					get in touch
-				</a>{" "}
-				as soon as possible!
-			</p>
-			<a href="mailto:ben@vpcc.church?subject=I%20would%20like%20to%20help%20out!">
-				<Button>Get in touch →</Button>
-			</a>
 		</div>
 		<div
 			className={[feature.major, feature.left, feature.image].join(" ")}
