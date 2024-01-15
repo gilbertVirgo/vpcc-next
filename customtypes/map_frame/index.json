@@ -1,0 +1,25 @@
+{
+	"id": "map_frame",
+	"label": "Map Frame",
+	"format": "custom",
+	"repeatable": true,
+	"status": true,
+	"json": {
+		"Main": {
+			"uid": {
+				"config": {
+					"label": "UID"
+				},
+				"type": "UID"
+			},
+			"embed_link": {
+				"type": "Link",
+				"config": {
+					"label": "Embed Link",
+					"placeholder": "",
+					"select": null
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"id": "stop_motion_frame",
+	"label": "Stop Motion Frame",
+	"format": "custom",
+	"repeatable": true,
+	"status": true,
+	"json": {
+		"Main": {
+			"uid": {
+				"config": {
+					"label": "UID"
+				},
+				"type": "UID"
+			},
+			"video": {
+				"type": "Link",
+				"config": {
+					"label": "Video",
+					"placeholder": "",
+					"select": "media"
+				}
+			},
+			"frames_per_second": {
+				"type": "Number",
+				"config": {
+					"label": "Frames Per Second",
+					"placeholder": ""
+				}
+			}
+		}
+	}
+}

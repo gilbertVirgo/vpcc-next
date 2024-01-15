@@ -1,0 +1,131 @@
+{
+  "id": "feature_block",
+  "type": "SharedSlice",
+  "name": "FeatureBlock",
+  "description": "FeatureBlock",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "theme": {
+          "type": "Link",
+          "config": {
+            "label": "Theme",
+            "select": "document",
+            "customtypes": [
+              "theme"
+            ]
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "body": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Body",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "frame": {
+          "type": "Link",
+          "config": {
+            "label": "Frame",
+            "select": "document",
+            "customtypes": [
+              "map_frame",
+              "slideshow_frame",
+              "still_frame",
+              "stop_motion_frame"
+            ]
+          }
+        },
+        "text_over_image": {
+          "type": "Boolean",
+          "config": {
+            "label": "Text Over Image",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
+      "items": {
+        "button_title": {
+          "type": "Text",
+          "config": {
+            "label": "Button Title",
+            "placeholder": ""
+          }
+        },
+        "button_theme": {
+          "type": "Link",
+          "config": {
+            "label": "Button Theme",
+            "select": "document",
+            "customtypes": [
+              "theme"
+            ]
+          }
+        },
+        "button_link": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      }
+    },
+    {
+      "id": "event",
+      "name": "Event",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "theme": {
+          "type": "Link",
+          "config": {
+            "label": "Theme",
+            "select": "document",
+            "customtypes": [
+              "theme"
+            ]
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "event": {
+          "type": "Link",
+          "config": {
+            "label": "Event",
+            "select": "document",
+            "customtypes": [
+              "event"
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

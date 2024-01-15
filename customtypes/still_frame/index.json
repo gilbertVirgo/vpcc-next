@@ -1,0 +1,34 @@
+{
+	"id": "still_frame",
+	"label": "Still Frame",
+	"format": "custom",
+	"repeatable": true,
+	"status": true,
+	"json": {
+		"Main": {
+			"uid": {
+				"config": {
+					"label": "UID"
+				},
+				"type": "UID"
+			},
+			"image": {
+				"type": "Image",
+				"config": {
+					"label": "Image",
+					"constraint": {
+						"width": 1600,
+						"height": 900
+					},
+					"thumbnails": [
+						{
+							"name": "small",
+							"width": 900,
+							"height": 900
+						}
+					]
+				}
+			}
+		}
+	}
+}

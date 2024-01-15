@@ -1,0 +1,45 @@
+{
+	"id": "nav",
+	"label": "Nav",
+	"format": "custom",
+	"repeatable": false,
+	"status": true,
+	"json": {
+		"Main": {
+			"logo": {
+				"type": "Image",
+				"config": {
+					"label": "Logo",
+					"constraint": {
+						"width": 70,
+						"height": 70
+					},
+					"thumbnails": []
+				}
+			},
+			"items": {
+				"type": "Group",
+				"config": {
+					"label": "Items",
+					"fields": {
+						"title": {
+							"type": "Text",
+							"config": {
+								"label": "Title",
+								"placeholder": ""
+							}
+						},
+						"link": {
+							"type": "Link",
+							"config": {
+								"label": "Link",
+								"placeholder": "",
+								"select": null
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

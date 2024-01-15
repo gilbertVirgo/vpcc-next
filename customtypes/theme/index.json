@@ -1,0 +1,31 @@
+{
+	"id": "theme",
+	"label": "Theme",
+	"format": "custom",
+	"repeatable": true,
+	"status": true,
+	"json": {
+		"Main": {
+			"uid": {
+				"config": {
+					"label": "UID"
+				},
+				"type": "UID"
+			},
+			"background_color": {
+				"type": "Color",
+				"config": {
+					"label": "Background Color",
+					"placeholder": ""
+				}
+			},
+			"text_color": {
+				"type": "Color",
+				"config": {
+					"label": "Text Color",
+					"placeholder": ""
+				}
+			}
+		}
+	}
+}
